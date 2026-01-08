@@ -47,7 +47,7 @@ export default function Home() {
         {
             icon: <Truck className="h-8 w-8 text-red-500" />,
             title: "Fast Shipping",
-            description: "Free delivery on all orders over $100 within 48 hours."
+            description: "Free delivery on all orders over ₹5,000 within 48 hours."
         },
         {
             icon: <ShieldCheck className="h-8 w-8 text-red-500" />,

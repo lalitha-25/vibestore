@@ -2,7 +2,7 @@ export const products = [
     {
         id: 1,
         name: "Classic White Tee",
-        price: 29.99,
+        price: 999,
         category: "Clothing",
         image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
         isNew: true,
@@ -10,7 +10,7 @@ export const products = [
     {
         id: 2,
         name: "Denim Jacket",
-        price: 89.99,
+        price: 2499,
         category: "Outerwear",
         image: "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
         isNew: false,
@@ -18,7 +18,7 @@ export const products = [
     {
         id: 3,
         name: "Minimalist Watch",
-        price: 129.99,
+        price: 4999,
         category: "Accessories",
         image: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
         isNew: true,
@@ -26,7 +26,7 @@ export const products = [
     {
         id: 4,
         name: "Leather Backpack",
-        price: 159.99,
+        price: 3599,
         category: "Accessories",
         image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
         isNew: false,
@@ -34,7 +34,7 @@ export const products = [
     {
         id: 5,
         name: "Running Sneakers",
-        price: 79.99,
+        price: 2999,
         category: "Footwear",
         image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
         isNew: false,
@@ -42,7 +42,7 @@ export const products = [
     {
         id: 6,
         name: "Cotton Chinos",
-        price: 49.99,
+        price: 1599,
         category: "Clothing",
         image: "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
         isNew: true,

@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Menu, X, ShoppingBag, User, LogOut } from 'lucide-react';
+import { Menu, X, ShoppingBag, User, LogOut, Heart } from 'lucide-react';
 import { Button } from './ui/Button';
 import { cn } from '../lib/utils';
+import { useCart } from '../context/CartContext';
 
 export function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [user, setUser] = useState(null);
     const location = useLocation();
     const navigate = useNavigate();
+    const { cartCount, wishlistCount } = useCart();
 
     useEffect(() => {
         const storedUser = localStorage.getItem('user');
@@ -62,6 +64,23 @@ export function Navbar() {
 
                     {/* Desktop Actions */}
                     <div className="hidden md:flex md:items-center md:space-x-4">
+                        <Link to="/wishlist" className="relative p-2 text-muted-foreground hover:text-primary transition-colors">
+                            <Heart className="h-5 w-5" />
+                            {wishlistCount > 0 && (
+                                <span className="absolute -right-1 -top-1 flex h-4 w-4 items-center justify-center rounded-full bg-red-500 text-[10px] font-bold text-white">
+                                    {wishlistCount}
+                                </span>
+                            )}
+                        </Link>
+                        <Link to="/cart" className="relative p-2 text-muted-foreground hover:text-primary transition-colors">
+                            <ShoppingBag className="h-5 w-5" />
+                            {cartCount > 0 && (
+                                <span className="absolute -right-1 -top-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-[10px] font-bold text-primary-foreground">
+                                    {cartCount}
+                                </span>
+                            )}
+                        </Link>
+                        <div className="h-6 w-px bg-border mx-2" />
                         {user ? (
                             <div className="flex items-center space-x-4">
                                 <div className="flex items-center space-x-2 rounded-full bg-accent px-3 py-1 text-sm font-medium">
