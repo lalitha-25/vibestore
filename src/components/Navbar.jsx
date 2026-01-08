@@ -29,10 +29,7 @@ export function Navbar() {
         navigate('/');
     };
 
-    const navLinks = [
-        { name: 'Home', path: '/' },
-        { name: 'Shop', path: '/products' },
-    ];
+    const navLinks = [];
 
     return (
         <nav className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/60">
