@@ -68,7 +68,7 @@ export default function Login() {
                                 id="email"
                                 name="email"
                                 type="email"
-                                placeholder="m@example.com"
+                                placeholder="Enter your email"
                                 value={formData.email}
                                 onChange={handleChange}
                                 error={errors.email}
